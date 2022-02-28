@@ -18,7 +18,10 @@ void main() async {
           projectId: "instagram-clone-dc591",
           storageBucket: "instagram-clone-dc591.appspot.com"),
     );
+  } else {
+    await Firebase.initializeApp();
   }
+
   runApp(const MyApp());
 }
 
